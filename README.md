@@ -37,11 +37,11 @@ Jersey framework is more than the JAX-RS Reference Implementation. Jersey provid
 
 The various endpoints rendered by the project are as below:
 
-http://localhost:8585/BankAPI/rest/client/consolidate-report
-http://localhost:8585/BankAPI/rest/client/consolidate-report/from/{i}/to/{j}
-http://localhost:8585/BankAPI/rest/client/report/clientname/{i}
-http://localhost:8585/BankAPI/rest/client/report/clientname/report/clientname/{i}
-http://localhost:8585/BankAPI/rest/client/all-clients
+* http://localhost:8585/BankAPI/rest/client/consolidate-report
+* http://localhost:8585/BankAPI/rest/client/consolidate-report/from/{i}/to/{j}
+* http://localhost:8585/BankAPI/rest/client/report/clientname/{i}
+* http://localhost:8585/BankAPI/rest/client/report/clientname/report/clientname/{i}
+* http://localhost:8585/BankAPI/rest/client/all-clients
 
 
 
