@@ -42,17 +42,18 @@
 								Client Reporting   <br>
 								Analysis <br>				
 							</h1>
+							<form name="myForm" action="../client-report-analysis-view.html">
 							<table >
 <tr>
 <th><b style="color:white">FROM:   &nbsp;</b></th>
 
-<th> <input onchange="linkfunc()" id="from" type="date"/> </th>
+<th> <input min="2018-06-09" onchange="linkfunc()" id="from" type="date" required> </th>
 
 </tr>
    <tr>
 <th><b style="color:white">TO:   &nbsp;</b></th>
 
-<th> <input onchange="linkfunc()" id="to" type="date"/> </th>
+<th> <input onchange="linkfunc()" max="2018-24-09" id="to" type="date" required> </th>
 
 </tr>
 <tr>
@@ -61,8 +62,8 @@
 <th><b style="color:white" >REPORTS: &nbsp; &nbsp;</b> </th>
 
 <th> 
-	<select id="dd" onchange="linkfunc()">
-		<option value = "Apple"> Select
+	<select required id="dd" onchange="linkfunc()" >
+		<option value = "Apple" > Select
 
   </select>
 
@@ -73,8 +74,9 @@
 </table> <br>
 <br>
 <br>
-							<a href="../client-report-analysis-view.html" id="link" class="primary-btn2 header-btn text-uppercase">View</a> &nbsp;   <a href="../index.html" class="primary-btn2 header-btn text-uppercase">Home</a>
+							<button id="link" class="primary-btn2 header-btn text-uppercase">View</button> &nbsp;   <a href="../index.html" class="primary-btn2 header-btn text-uppercase">Home</a>
 						</div>
+						</form>
 						<div class="col-lg-6">
 							<img class="img-fluid" src="img/header-img.png" alt="">
 						</div>												

@@ -45,7 +45,7 @@
 								Galore <br>				
 							</h1>
 							
-
+<form name="myForm" action="../investments-galore-view.html">
               <table align="left">
 <!--
 <tr>
@@ -70,7 +70,7 @@ XYZ Mutual Funds</option>
 <b style="color:white"     >FROM: </b>
   </th>
 <th>
-<input onchange="linkfunc()" id="from" type="date"/>
+<input min="2018-06-09" onchange="linkfunc()" id="from" type="date" required >
 <br>
 
 </th>
@@ -84,7 +84,7 @@ XYZ Mutual Funds</option>
 <b style="color:white"     >TO: </b>
   </th>
 <th>
-<input onchange="linkfunc()" id="to" type="date"/>
+<input max="2018-24-09" onchange="linkfunc()" id="to" type="date" required >
 
 </th>
 </tr>
@@ -132,8 +132,9 @@ XYZ Mutual Funds</option>
 <br>
 
 
-							<a href="../investments-galore-view.html" class="primary-btn2 header-btn text-uppercase">View</a> &nbsp; <a href="../index.html" class="primary-btn2 header-btn text-uppercase">Home</a>
+							<button class="primary-btn2 header-btn text-uppercase">View</button> &nbsp; <a href="../index.html" class="primary-btn2 header-btn text-uppercase">Home</a>
 						</div>
+</form>						
 						<div class="col-lg-6">
 							<img class="img-fluid" src="img/header-img.png" alt="">
 						</div>												
@@ -153,12 +154,15 @@ XYZ Mutual Funds</option>
 			<script src="js/jquery.magnific-popup.min.js"></script>			
 			<script src="js/main.js"></script>	
 	<script>
-	function linkfunc(){
-        var from = document.getElementById("from").value;
+		document.getElementById("from").setAttribute("min", "2018-14-09");
+		function linkfunc(){
+		var from = document.getElementById("from").value;
+        document.getElementById("to").setAttribute("min", from);
         var to = document.getElementById("to").value;
         var url = "http://localhost:8585/BankAPI/rest/client/consolidate-report/from/"+from+"/to/"+to;
         sessionStorage.Url = url;
         }
+
     </script>
 		</body>
 	</html>

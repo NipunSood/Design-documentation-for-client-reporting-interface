@@ -1,5 +1,7 @@
-        function linkfunc(){
+document.getElementById("from").setAttribute("min", "2018-14-09");        
+function linkfunc(){
         var from = document.getElementById("from").value;
+        document.getElementById("to").setAttribute("min", from);
         var to = document.getElementById("to").value;
         var x = document.getElementById("dd").value;
         var url = "http://localhost:8585/BankAPI/rest/client/report/clientname/"+x+"/from/"+from+"/to/"+to;
