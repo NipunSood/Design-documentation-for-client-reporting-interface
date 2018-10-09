@@ -41,3 +41,8 @@ html, #page { padding:0; margin:0;}
             
             /* Clear both sides to assist with div alignment  */
             .clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+            
+button.primary-btn2.header-btn.text-uppercase {
+    outline: none;
+    cursor: pointer;
+}
